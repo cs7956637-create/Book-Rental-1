@@ -24,7 +24,7 @@ const Register = () => {
             setLoading(true);
 
             const response = await axios.post(
-                "http://localhost:3000/auth/register",
+                "https://book-rental-backend-ywuy.onrender.com/auth/register",
                 {
                     name,
                     email,

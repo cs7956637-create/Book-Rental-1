@@ -41,7 +41,7 @@ const Reader = () => {
 
                 const response = await axios.get(
 
-                    `http://localhost:3000/rental/read/${actualBookId}`,
+                    `https://book-rental-backend-ywuy.onrender.com/rental/read/${actualBookId}`,
 
                     {
                         headers: {

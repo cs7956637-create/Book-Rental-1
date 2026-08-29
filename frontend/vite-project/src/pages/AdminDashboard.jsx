@@ -55,15 +55,15 @@ const AdminDashboard = () => {
             const [statsResponse, booksResponse] =
                 await Promise.all([
 
-                    axios.get(
-                        "http://localhost:3000/admin/stats",
-                        config
-                    ),
+                  axios.get(
+    "https://book-rental-backend-ywuy.onrender.com/admin/stats",
+    config
+),
 
-                    axios.get(
-                        "http://localhost:3000/admin/books",
-                        config
-                    )
+axios.get(
+    "https://book-rental-backend-ywuy.onrender.com/admin/books",
+    config
+)
 
                 ]);
 
@@ -130,7 +130,7 @@ const AdminDashboard = () => {
 
             await axios.delete(
 
-                `http://localhost:3000/admin/books/${id}`,
+                `https://book-rental-backend-ywuy.onrender.com/books/admin/books/${id}`,
 
                 config
 
@@ -465,7 +465,7 @@ const AdminDashboard = () => {
 
                                                 <img
                                                     src={
-                                                        `http://localhost:3000/uploads/covers/${book.coverImage}`
+                                                        `https://book-rental-backend-ywuy.onrender.com/books/uploads/covers/${book.coverImage}`
                                                     }
                                                     alt={book.title}
                                                     onError={(e) => {

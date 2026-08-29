@@ -38,7 +38,7 @@ const MyBooks = () => {
             const response =
                 await axios.get(
 
-                    "http://localhost:3000/rental/my-books",
+                   "https://book-rental-backend-ywuy.onrender.com/rental/my-books",
 
                     {
                         headers: {
@@ -268,14 +268,11 @@ const MyBooks = () => {
 
                                 <div className="cover-wrapper">
 
-                                    <img
-
-                                                src={`http://localhost:3000/uploads/covers/${rental.bookId.coverImage}`}
-                                                 alt={rental.bookId.title}
-
-                                        className="book-cover"
-
-                                    />
+                                   <img
+    src={`https://book-rental-backend-ywuy.onrender.com/uploads/covers/${rental.bookId.coverImage}`}
+    alt={rental.bookId.title}
+    className="book-cover"
+/>
 
 
                                     {/* STATUS */}

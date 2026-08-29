@@ -40,11 +40,9 @@ const EditBook = () => {
             try {
 
                 const response =
-                    await axios.get(
-
-                        `http://localhost:3000/books/${id}`
-
-                    );
+                  axios.get(
+    `https://book-rental-backend-ywuy.onrender.com/books/${id}`
+);
 
 
                 const book =
@@ -107,7 +105,7 @@ const EditBook = () => {
             const response =
                 await axios.put(
 
-                    `http://localhost:3000/admin/books/${id}`,
+                    `https://book-rental-backend-ywuy.onrender.com/admin/books/${id}`,
 
                     {
                         title,

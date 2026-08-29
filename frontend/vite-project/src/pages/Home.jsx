@@ -23,9 +23,9 @@ const Home = () => {
 
         try {
 
-            const response = await axios.get(
-                "http://localhost:3000/books"
-            );
+           const response = await axios.get(
+    "https://book-rental-backend-ywuy.onrender.com/books"
+);
 
             setBooks(response.data);
 
@@ -402,12 +402,10 @@ const Home = () => {
 
                                 <div className="book-cover">
 
-                                    <img
-                                        src={
-                                            `http://localhost:3000/uploads/covers/${book.coverImage}`
-                                        }
-                                        alt={book.title}
-                                    />
+                                  <img
+    src={`https://book-rental-backend-ywuy.onrender.com/uploads/covers/${book.coverImage}`}
+    alt={book.title}
+/>
 
 
                                     <div className="price-badge">
