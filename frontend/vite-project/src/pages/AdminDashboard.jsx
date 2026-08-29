@@ -55,15 +55,15 @@ const AdminDashboard = () => {
             const [statsResponse, booksResponse] =
                 await Promise.all([
 
-                  axios.get(
-    "https://book-rental-backend-ywuy.onrender.com/admin/stats",
-    config
-),
+                    axios.get(
+            "https://book-rental-backend-ywuy.onrender.com/books/admin/stats",
+            config
+        ),
 
-axios.get(
-    "https://book-rental-backend-ywuy.onrender.com/admin/books",
-    config
-)
+        axios.get(
+            "https://book-rental-backend-ywuy.onrender.com/books/admin/books",
+            config
+        )
 
                 ]);
 
