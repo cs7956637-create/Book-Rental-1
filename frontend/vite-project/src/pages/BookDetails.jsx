@@ -19,9 +19,10 @@ const BookDetails = () => {
 
             try {
 
-                const response = await axios.get(
-                    `https://book-rental-backend-ywuy.onrender.com/books/books/${id}`
-                );
+               // GET BOOK
+const response = await axios.get(
+    `https://book-rental-backend-ywuy.onrender.com/books/${id}`
+);
 
                 setBook(response.data);
 
@@ -59,7 +60,7 @@ const BookDetails = () => {
             setPaymentLoading(true);
 
             const response = await axios.post(
-                "https://book-rental-backend-ywuy.onrender.com/payment/create-order",
+                   "https://book-rental-backend-ywuy.onrender.com/payment/create-order",
                 {
                     bookId: id
                 },
@@ -95,7 +96,7 @@ const BookDetails = () => {
                         const verifyResponse =
                             await axios.post(
 
-                                "https://book-rental-backend-ywuy.onrender.com/payment/verify",
+                               "https://book-rental-backend-ywuy.onrender.com/payment/verify"  ,
 
                                 {
 
@@ -240,7 +241,7 @@ const BookDetails = () => {
 
                     <div className="image-wrapper">
                     <img
-    src={`https://book-rental-backend-ywuy.onrender.com/uploads/covers/${book.coverImage}`}
+src={`https://book-rental-backend-ywuy.onrender.com/uploads/covers/${book.coverImage}`}
     alt={book.title}
 />
 
