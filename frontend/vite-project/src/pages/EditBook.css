@@ -1,0 +1,194 @@
+.edit-page {
+    min-height: 100vh;
+
+    background: #f7f8fc;
+
+    padding: 50px 20px;
+}
+
+
+.edit-card {
+    max-width: 700px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 40px rgba(
+            0,
+            0,
+            0,
+            0.07
+        );
+}
+
+
+.back-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #6c63ff;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+
+.edit-heading p {
+    color: #6c63ff;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+
+.edit-heading h1 {
+    margin: 0;
+
+    font-size: 32px;
+}
+
+
+.edit-heading span {
+    display: block;
+
+    color: #888;
+
+    margin-top: 8px;
+
+    margin-bottom: 30px;
+}
+
+
+.edit-card form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.edit-card label {
+    margin-top: 17px;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #333;
+}
+
+
+.edit-card input,
+.edit-card textarea {
+    border: 1px solid #ddd;
+
+    border-radius: 9px;
+
+    padding: 12px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    font-family: inherit;
+}
+
+
+.edit-card input:focus,
+.edit-card textarea:focus {
+    border-color: #6c63ff;
+}
+
+
+.edit-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+
+.cancel-btn,
+.save-btn {
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+
+.cancel-btn {
+    background: #eee;
+
+    color: #333;
+}
+
+
+.save-btn {
+    background: #6c63ff;
+
+    color: white;
+}
+
+
+.save-btn:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+.edit-loading {
+    text-align: center;
+
+    margin-top: 100px;
+}
+
+
+@media (max-width: 600px) {
+
+    .edit-page {
+        padding: 25px 15px;
+    }
+
+
+    .edit-card {
+        padding: 23px;
+    }
+
+
+    .edit-actions {
+        flex-direction: column;
+    }
+
+
+    .cancel-btn,
+    .save-btn {
+        width: 100%;
+    }
+
+}

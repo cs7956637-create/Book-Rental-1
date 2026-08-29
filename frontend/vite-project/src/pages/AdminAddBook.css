@@ -1,0 +1,438 @@
+.add-book-page {
+    min-height: 100vh;
+
+    background: #f7f8fc;
+
+    padding: 45px 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.add-book-card {
+    max-width: 850px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    border: 1px solid #eee;
+
+    box-shadow:
+        0 10px 40px rgba(
+            0,
+            0,
+            0,
+            0.06
+        );
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.add-book-header {
+    margin-bottom: 35px;
+}
+
+
+.back-button {
+    border: none;
+
+    background: transparent;
+
+    color: #6c63ff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    padding: 0;
+
+    margin-bottom: 25px;
+}
+
+
+.admin-label {
+    color: #6c63ff;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin: 0 0 7px;
+}
+
+
+.add-book-header h1 {
+    margin: 0;
+
+    font-size: 34px;
+
+    color: #171717;
+}
+
+
+.header-text {
+    color: #888;
+
+    margin-top: 8px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.add-book-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.form-group label,
+.file-box > label {
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #333;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    font-family: inherit;
+
+    transition: 0.2s;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #6c63ff;
+
+    box-shadow:
+        0 0 0 3px rgba(
+            108,
+            99,
+            255,
+            0.08
+        );
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.price-input {
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.price-input span {
+    padding-left: 14px;
+
+    font-weight: 700;
+
+    color: #555;
+}
+
+
+.price-input input {
+    border: none;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    padding-left: 8px;
+}
+
+
+.price-input input:focus {
+    box-shadow: none;
+}
+
+
+.form-group small {
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   FILE GRID
+========================= */
+
+.file-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.file-box {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.upload-area {
+    min-height: 180px;
+
+    border: 2px dashed #ddd;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    background: #fafaff;
+}
+
+
+.upload-area:hover {
+    border-color: #6c63ff;
+
+    background: #f8f7ff;
+}
+
+
+.upload-icon {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+.upload-area strong {
+    color: #333;
+
+    font-size: 15px;
+}
+
+
+.upload-area span {
+    color: #999;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+
+/* FILE INPUT */
+
+.upload-area input[type="file"] {
+    margin-top: 15px;
+
+    max-width: 100%;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* SELECTED FILE */
+
+.selected-file {
+    color: #15803d;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    max-width: 100%;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    margin: 8px 0 0;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.form-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 10px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #eee;
+}
+
+
+.cancel-button,
+.submit-button {
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.cancel-button {
+    border: 1px solid #ddd;
+
+    background: white;
+
+    color: #444;
+}
+
+
+.cancel-button:hover {
+    background: #f7f7f7;
+}
+
+
+.submit-button {
+    border: none;
+
+    background: #6c63ff;
+
+    color: white;
+}
+
+
+.submit-button:hover {
+    opacity: 0.9;
+}
+
+
+.submit-button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .add-book-page {
+        padding: 25px 15px;
+    }
+
+
+    .add-book-card {
+        padding: 23px;
+
+        border-radius: 15px;
+    }
+
+
+    .add-book-header h1 {
+        font-size: 28px;
+    }
+
+
+    .file-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+
+    .cancel-button,
+    .submit-button {
+        width: 100%;
+    }
+
+}
