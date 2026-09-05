@@ -56,12 +56,12 @@ const AdminDashboard = () => {
                 await Promise.all([
 
                     axios.get(
-            "https://book-rental-backend-ywuy.onrender.com/books/admin/stats",
+            "https://book-rental-backend-ywuy.onrender.com/admin/stats",
             config
         ),
 
         axios.get(
-            "https://book-rental-backend-ywuy.onrender.com/books/admin/books",
+            "https://book-rental-backend-ywuy.onrender.com/admin/books",
             config
         )
 
@@ -130,7 +130,7 @@ const AdminDashboard = () => {
 
             await axios.delete(
 
-                `https://book-rental-backend-ywuy.onrender.com/books/admin/books/${id}`,
+                `https://book-rental-backend-ywuy.onrender.com/admin/books/${id}`,
 
                 config
 
